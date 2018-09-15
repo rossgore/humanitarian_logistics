@@ -608,6 +608,80 @@ class ModelExplorer():
         except Exception as e:
             print(str(e))
             return None
+            
+    def run_trial_nc_no_participate(self, coa_se_value, coa_st_value, coa_c_value, coa_otc_value, ngo_se_value, ngo_st_value, ngo_c_value, ngo_otc_value, 
+                           ind_se_value, ind_st_value, ind_c_value, ind_otc_value, trial_id, all_time_steps, po_value):
+        try:
+            toReturn = []
+            test = HumanitarianLogistics(False, self.width, self.height, self.num_pols, self.city_size, coa_se_value, coa_st_value, coa_c_value, coa_otc_value)
+            test.shock_flag = self.shock_flag
+            test.dq = self.dq
+            test.include_social_networks = False
+            ngo = [x for x in test.schedule.agents if type(x) is NGO]
+            for unit in ngo:
+                unit.values = Values(10, ngo_se_value,ngo_st_value,ngo_c_value,ngo_otc_value, unit)
+            coa_array = [coa for coa in test.schedule.agents if type(coa) is COA and coa.city.modality == 'AZC']
+            
+            inds = [ind for ind in test.schedule.agents if type(ind) is IND]
+            for unit in inds:
+                unit.values = Values(10, ind_se_value,ind_st_value,ind_c_value,ind_otc_value, unit)
+            azcs = [azc for azc in test.schedule.agents if type(azc) is AZC]
+            for b in azcs:
+                if po_value == -99:
+                    b.city.ngo.funds = 0
+                    b.funds = 0
+                    b.city.ngo.testing = False
+                    copy = set([])
+                    for act in b.activity_center.activities_available:
+                        if not (act.name == 'Football' or act.name == 'Volunteer'):
+                            copy.add(act)
+                    b.activity_center.activities_available = copy
+            cities = []
+            for coa in coa_array:
+                if coa.city is not None:
+                    if po_value != -99:
+                        coa.city.public_opinion = po_value
+                    cities.append(coa.city)
+            for step in range(0,self.number_steps):
+                test.step()
+                buf_coa_cost = []
+                for ind_unit in inds:
+                    buf_coa_cost.append([ind_unit.city.coa.housing_costs + ind_unit.city.coa.hotel_costs])
+                coa_costs = np.nansum(buf_coa_cost)
+                buf = []
+                for coa in coa_array:
+                    for building in coa.city.azcs:
+                        if (np.isnan(building.health)==False):
+                            buf.append(building.health)
+                bh = np.mean(buf)
+                #bh = np.nanmean(buf)
+                buf_ac = []
+                buf_health = []
+                buf_distress = []
+                newcomers = [nc for nc in test.schedule.agents if type(nc) is Newcomer and nc.ls == 'as_ext']
+                for nc in newcomers:
+                    buf_ac.append(nc.acculturation)
+                    buf_health.append(nc.health)
+                    buf_distress.append(nc.values.health)
+                ac = np.nanmean(buf_ac)
+                nc_health = np.nanmean(buf_health)
+                nc_distress = np.nanmean(buf_distress)
+                ng = np.nanmean([ngo.funds for ngo in ngo])
+                ngo_cfr = np.nanmean([ngo.cumulative_funds_raised for ngo in ngo])
+                ngo_cme = np.nanmean([ngo.cumulative_marketing_expenditures for ngo in ngo])
+                ct = np.nanmean([city.public_opinion for city in cities])
+                ct_costs = np.nanmean([city.costs for city in cities])
+                ct_crime = np.nanmean([city.crime for city in cities])
+                staff = np.nanmean([coa.staff for coa in coa_array])
+                values = [trial_id, step, coa_se_value, coa_st_value, coa_c_value, coa_otc_value, ngo_se_value, ngo_st_value, ngo_c_value, ngo_otc_value, ind_se_value, ind_st_value, ind_c_value, ind_otc_value, po_value, ng, ngo_cfr, ngo_cme, ct, bh, ac, staff, ct_costs, ct_crime, coa_costs, nc_health, nc_distress]
+                if all_time_steps==True:
+                    toReturn.append(values)
+            if all_time_steps == False:
+                toReturn.append(values)
+            return (toReturn)
+        except Exception as e:
+            print(str(e))
+            return None
 
     def trace_given_cw(self):
         

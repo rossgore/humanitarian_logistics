@@ -165,6 +165,8 @@ class Newcomer(Agent):
                     self.model.country_success[self.model.country_list.index(self.coo)] += 1
                     if self.first == 1:
                         self.model.confusionMatrix['TP'] += 1
+                        self.coa.city.public_opinion -= (self.coa.city.public_opinion - self.coa.city.po_min) / 100
+                        self.coa.city.public_opinion = max(0, self.coa.city.public_opinion)
                     else:
                         self.model.confusionMatrix['FP'] += 1
                         self.coa.city.public_opinion -= (self.coa.city.public_opinion - self.coa.city.po_min) / 100
