@@ -10,45 +10,45 @@ Warning--no number and no volume in 37
 Warning--page numbers missing in 37
 Warning--empty organization in 38
 Warning--page numbers missing in 67
-You've used 32 entries,
+You've used 26 entries,
             2956 wiz_defined-function locations,
-            825 strings with 10748 characters,
-and the built_in function-call counts, 22609 in all, are:
-= -- 2007
-> -- 1583
-< -- 4
-+ -- 484
-- -- 544
-* -- 2003
-:= -- 3995
-add.period$ -- 99
-call.type$ -- 32
-change.case$ -- 199
-chr.to.int$ -- 32
-cite$ -- 39
-duplicate$ -- 603
-empty$ -- 1386
-format.name$ -- 632
-if$ -- 4286
+            788 strings with 9564 characters,
+and the built_in function-call counts, 17842 in all, are:
+= -- 1569
+> -- 1262
+< -- 2
++ -- 386
+- -- 432
+* -- 1587
+:= -- 3185
+add.period$ -- 79
+call.type$ -- 26
+change.case$ -- 161
+chr.to.int$ -- 26
+cite$ -- 33
+duplicate$ -- 469
+empty$ -- 1087
+format.name$ -- 500
+if$ -- 3354
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 30
-newline$ -- 188
-num.names$ -- 310
-pop$ -- 175
+missing$ -- 24
+newline$ -- 152
+num.names$ -- 250
+pop$ -- 137
 preamble$ -- 1
-purify$ -- 423
+purify$ -- 343
 quote$ -- 0
-skip$ -- 661
+skip$ -- 515
 stack$ -- 0
-substring$ -- 1169
-swap$ -- 199
-text.length$ -- 4
+substring$ -- 891
+swap$ -- 147
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 740
+type$ -- 596
 warning$ -- 7
-while$ -- 310
+while$ -- 245
 width$ -- 0
-write$ -- 463
+write$ -- 373
 (There were 7 warnings)
