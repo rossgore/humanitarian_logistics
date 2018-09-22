@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: spring-sim-19-paper.aux
+The style file: scsproc.bst
+Database file #1: demobib.bib
+Warning--no number and no volume in cox1992causality
+Warning--page numbers missing in gore2017augmenting
+Warning--no journal in 37
+Warning--no number and no volume in 37
+Warning--page numbers missing in 37
+Warning--empty organization in 38
+Warning--page numbers missing in 67
+You've used 32 entries,
+            2956 wiz_defined-function locations,
+            825 strings with 10748 characters,
+and the built_in function-call counts, 22609 in all, are:
+= -- 2007
+> -- 1583
+< -- 4
++ -- 484
+- -- 544
+* -- 2003
+:= -- 3995
+add.period$ -- 99
+call.type$ -- 32
+change.case$ -- 199
+chr.to.int$ -- 32
+cite$ -- 39
+duplicate$ -- 603
+empty$ -- 1386
+format.name$ -- 632
+if$ -- 4286
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 30
+newline$ -- 188
+num.names$ -- 310
+pop$ -- 175
+preamble$ -- 1
+purify$ -- 423
+quote$ -- 0
+skip$ -- 661
+stack$ -- 0
+substring$ -- 1169
+swap$ -- 199
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 740
+warning$ -- 7
+while$ -- 310
+width$ -- 0
+write$ -- 463
+(There were 7 warnings)
