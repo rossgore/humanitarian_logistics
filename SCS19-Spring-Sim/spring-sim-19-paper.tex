@@ -268,7 +268,7 @@ The agents within our model have different purposes, different attributes and di
 \begin{table}[ht]
 \begin{center}
 \caption{\label{tab:agentacts} Agent Obligatory and SVQ Acts}
-\resizebox{0.8\textwidth}{!}{%
+\resizebox{0.7\textwidth}{!}{%
 \begin{tabular}{| llll |}
 \hline
 \textbf{Agent}          & \textbf{SVQ / Obligatory}       & \textbf{Name} & \textbf{Prerequisite}                                                                               \\
@@ -320,9 +320,9 @@ One additional activity that is also always available to newcomers is Crime. Cri
 {\bf NGO:} NGO is a non-government institutional agent that supports newcomers through the development and scheduling of activities, raising funds from the public, and influencing the public. Unlike the other agents in our model, an NGO agent is not required to be present in cities and does not have any obligatory actions. The Conservation SVQ Action for a NGO is Fundraise. Fundraise converts the city residents' public-opinion of the management of newcomers into funds for the NGO to use in the future. The opposite of the Fundraise SVQ action for a NGO is the Self-Enhancement SVQ action Marketing Campaign. When performing a marketing campaign a NGO converts funds into the city residents' public-opinion of the management of newcomers. The final two SVQ actions for a NGO are related to developing and scheduling newcomer activities. The Self-Transcendence SVQ action for a NGO is Custom Activities. When performing a Custom Activities action a NGO identifies the most unsatisfied SVQ among the newcomers in the city and develops an activity to satisfy it. Initially, the Custom Activity is scheduled for one session on a random day of the week. Every time a Custom Activity is developed the funds of the NGOs are decreased. If a NGO does not have sufficient funds it cannot perform a Custom Activity action. The Openness-To-Change SVQ action for a NGO is Prioritize which adjusts the scheduling of Custom Activities in the city to best meet the current SVQ needs of the population. For example, suppose a NGO has a Custom Activity satisfying the Openness-To-Change SVQ and a Custom Activity satisfying Conservation held two days a week. However, the most unsatisfied SVQ of the majority of newcomers in the city is the Conservation SVQ. In this scenario, the NGO Prioritize SVQ action would decrease the number of days the Openness-To-Change Custom Activity is scheduled and increase the number of days the Conservation SVQ is scheduled.
 
 \subsection{Parameters}
-A number of parameters enable users to explore different scenarios within our model. The model allows the user to specify: (1) if NGOs will be present in the cities, (2) if the activities developed by NGOs during the Custom Activity SVQ action will be branded as activities newcomers will participate in and (3) if the activities developed by NGOs during the Custom Activity SVQ action will be developed with an understanding of the most unsatisfied SVQ of the newcomers within the city or simply assigned a SVQ at random. The first parameter is self-explanatory. The latter two parameters require additional explanation and reflect the level of understanding an NGO has of newcomers. 
+The model allows the user to specify: (1) if NGOs will be present in the cities, (2) if the activities developed by NGOs during the Custom Activity SVQ action will be branded as activities newcomers will participate in and (3) if the activities developed by NGOs during the Custom Activity SVQ action will be developed with an understanding of the most unsatisfied SVQ of the newcomers within the city or simply assigned a SVQ at random. The first parameter is self-explanatory. The latter two parameters require additional explanation and reflect the level of understanding an NGO has of newcomers. 
 
-The branding of Custom Activities parameter reflects the dissonance that is possible between a host country and newcomers from a different country. For example, the NGO may offer newcomers a Custom Activity satisfying Openness-To-Change in the form of a jewelry making class. However, even if the activity satisfies an unsatisfied SVQ for a newcomer, she may not participate in the class because of native cultural norms which require jewelry to be hidden by females under their garments. A developed Custom Activity in the form of rugby may suffer the same fate because the newcomers are only familiar with football (i.e. American soccer). 
+The branding of Custom Activities parameter reflects the dissonance that is possible between a host country and newcomers from a different country. For example, the NGO may offer newcomers a Custom Activity satisfying Openness-To-Change in the form of a jewelry making class. However, even if the activity satisfies an unsatisfied SVQ for a newcomer, she may not participate in the class because of native cultural norms which require jewelry to be hidden by females under their garments.
 
 The understanding of the most unsatisfied SVQ of newcomers within a city parameter reflects the NGO understanding how, in terms of SVQs, newcomers are unsatisfied. This understanding effects how a NGO develops and schedules Custom Activities to satisfy these needs. If a NGO understands the most unsatisfied SVQ of a newcomer then Custom Activities are always developed to satisfy the most unsatisfied SVQ and Prioritize schedules those Custom Activities so that they help the most newcomers in a given time period. If a NGO does not understand the most unsatisfied SVQ of a newcomer then Custom Activities and Prioritize scheduling are done at random.
 
@@ -331,7 +331,7 @@ Along with these parameters the model enables users to specify the initial city 
 \begin{table}[ht]
 \begin{center}
 \caption{\label{tab:params}Model parameters}
-\resizebox{0.75\textwidth}{!}{%
+\resizebox{0.7\textwidth}{!}{%
 \begin{tabular}{|lcr|}
 \hline
 \textbf{Parameter}                                                                                          & \textbf{Prerequisite} & \textbf{Value}             \\
@@ -411,43 +411,39 @@ The correlation and coverage measure each have a maximum value of 1.0 and a mini
 \hline
 1: Minimize Newcomer Wellbeing                                                                                       &     NGO Present In Cities  = False  \textbf{OR}   & 1.00 & 1.00 & 1.00   \\
 \hspace*{0.25cm} Newcomer Wellbeing = 0 & (NGO Present In Cities  = True \textbf{AND} NGO Custom Activities Branded Towards Newcomers = False) & & & \\
- & & & & \\  
  \hline
 2: Maximize Newcomer Wellbeing                                                                                       &     NGO Present In Cities  = True  \textbf{AND}   & 0.85 & 1.00 & 0.74   \\
 \hspace*{0.25cm} Newcomer Wellbeing =100 & NGO Custom Activities Branded Towards Newcomers \textbf{AND} & & & \\
                                                                       & NGO Understands Newcomer SVQs for Custom Activities \& Prioritization = True \textbf{AND} & &  & \\
                                                                       & Initial Public Opinion in Cities > 80 \textbf{AND} & & & \\  
-                                                                      & NGO Openness-To-Change > 70 \textbf{AND} & & & \\         
-                                                                      & NGO Conservation < 30 \textbf{AND} & & & \\ 
-                                                                      & NGO Self-Transcendence > 70 \textbf{AND} & & & \\ 
-                                                                      & NGO Self-Enhancement < 30 \textbf{AND} & & & \\ 
-                                                                      & COA Openness-To-Change > 70 \textbf{AND} & & & \\         
-                                                                      & COA Conservation < 30 \textbf{AND} & & & \\ 
+                                                                      & NGO Openness-To-Change > 70 \textbf{AND} NGO Conservation < 30 \textbf{AND} & & & \\         
+                                                                      %& NGO Conservation < 30 \textbf{AND} & & & \\ 
+                                                                      & NGO Self-Transcendence > 70 \textbf{AND} NGO Self-Enhancement < 30 \textbf{AND} & & & \\ 
+                                                                      %& & & & \\ 
+                                                                      & COA Openness-To-Change > 70 \textbf{AND}  COA Conservation < 30 \textbf{AND} & & & \\         
+                                                                      %& & & & \\ 
                                                                       & COA Self-Transcendence > COA Self-Enhancement \textbf{AND} & & & \\ 
-                                                                      & IND Openness-To-Change > 70 \textbf{AND} & & & \\         
-                                                                      & IND Conservation < 30 \textbf{AND} & & & \\ 
-                                                                      & IND Self-Transcendence > 70 \textbf{AND} & & & \\ 
-                                                                      & IND Self-Enhancement < 30 & & & \\ 
- & & & & \\                                                                                                                                                                                             
+                                                                      & IND Openness-To-Change > 70 \textbf{AND} IND Conservation < 30 \textbf{AND} & & & \\         
+                                                                    %  & & & & \\ 
+                                                                      & IND Self-Transcendence > 70 \textbf{AND} IND Self-Enhancement < 30 & & & \\ 
+                                                                    %  &  & & & \\                                                                                                                                                                                           
  \hline
 3: Minimize Public Opinion                                                                                       &     NGO Present In Cities  = False  \textbf{OR}   & 1.00 & 1.00 & 1.00   \\
 \hspace*{0.25 cm} Public Opinion = 0 & (NGO Present In Cities  = True \textbf{AND} NGO Custom Activities Branded Towards Newcomers = False) & & & \\
- & & & & \\  
 \hline
-4: Maximize Public Opinion                                                                                       &     NGO Present In Cities  = True  AND   & 0.91 & 1.00 & 0.83   \\
-\hspace*{0.25cm} Public Opinion =100 & NGO Custom Activities Branded Towards Newcomers AND & & & \\
-                                                                      & NGO Understands Newcomer SVQs for Custom Activities \& Prioritization = True AND & &  & \\
-                                                                      & Initial Public Opinion in Cities > 80 AND & & & \\  
-                                                                      & NGO Openness-To-Change > 70 \textbf{AND} & & & \\         
-                                                                      & NGO Conservation < 30 \textbf{AND} & & & \\ 
-                                                                      & NGO Self-Transcendence > 70 \textbf{AND} & & & \\ 
-                                                                      & NGO Self-Enhancement < 30 \textbf{AND} & & & \\ 
-                                                                      & COA Openness-To-Change > 70 \textbf{AND} & & & \\         
-                                                                      & COA Conservation < 30 \textbf{AND} & & & \\ 
+4: Maximize Public Opinion                                                                                       &     NGO Present In Cities  = True  \textbf{AND}   & 0.91 & 1.00 & 0.83   \\
+\hspace*{0.25cm} Public Opinion =100 & NGO Custom Activities Branded Towards Newcomers \textbf{AND} & & & \\
+                                                                      & NGO Understands Newcomer SVQs for Custom Activities \& Prioritization = True \textbf{AND} & &  & \\
+                                                                      & Initial Public Opinion in Cities > 80 \textbf{AND} & & & \\  
+                                                                      & NGO Openness-To-Change > 70 \textbf{AND}  NGO Conservation < 30 \textbf{AND} & & & \\         
+                                                                     % && & & \\ 
+                                                                      & NGO Self-Transcendence > 70 \textbf{AND} NGO Self-Enhancement < 30 \textbf{AND}& & & \\ 
+                                                                      %&  & & & \\ 
+                                                                      & COA Openness-To-Change > 70 \textbf{AND} COA Conservation < 30 \textbf{AND} & & & \\         
+                                                                     % & & & & \\ 
                                                                       & COA Self-Transcendence > COA Self-Enhancement \textbf{AND} & & & \\ 
                                                                       & IND Openness-To-Change = IND Conservation \textbf{AND} & & & \\         
                                                                       & IND Self-Transcendence =  IND Self-Enhancement& & & \\ 
-                                                                       & & & & \\  
 \hline
 \end{tabular}}
 \end{center}
@@ -461,9 +457,7 @@ The worst case for newcomer wellbeing (i.e. 0) occurs when either: (1) no NGO is
 
 The results show that maximum newcomer wellbeing is produced through a more subtle set of conditions than those that avoid minimum newcomer wellbeing. While the presence of a NGO in cities and an understanding of the Custom Activities that newcomers will participate in is required to maximize newcomer wellbeing; these conditions alone are not sufficient. Maximum newcomer wellbeing also requires: (1) high initial resident public-opinion of the management of newcomers in the city, (2) an understanding of unsatisfied newcomer SVQs for Custom Activities and Prioritization and (3) COAs, NGOs and INDs that are higher in Self-Transcendence and Openness-to-Change SVQs than Conservation and Self-Enhancement SVQs.
 
-There are several important takeaways for decision-makers from the results of this analysis. The first is that while it is not important for NGOs to understand the SVQ needs of newcomers to avoid the minimum wellbeing, to provide maximum well being NGOs must understand these needs. Similarly, while the initial city residents' public-opinion of the management of newcomers can be disregarded if the goal is to avoid the minimum newcomer wellbeing, it is a necessary for city residents' to have a high opinion of the management of newcomers to produce maximum newcomer wellbeing. 
-
-Both of these conditions optimize the actions of NGOs in orthogonal ways to maximize their impact on newcomer wellbeing. Understanding the value needs of newcomers enables NGOs to develop Custom Activities that newcomers will participate in which satisfy their most unmet SVQ. The presence of cities with high public opinion of newcomers creates an environment for NGOs to effectively Fundraise and then convert those funds into several different Custom Activities operating on a dynamic schedule via Prioritize to address the most unmet SVQ of newcomers at any given time. 
+There are several important takeaways for decision-makers from the results of this analysis. The first is that while it is not important for NGOs to understand the SVQ needs of newcomers to avoid the minimum wellbeing, to provide maximum well being NGOs must understand these needs. Similarly, while the initial city residents' public-opinion of the management of newcomers can be disregarded if the goal is to avoid the minimum newcomer wellbeing, it is a necessary for city residents' to have a high opinion of the management of newcomers to produce maximum newcomer wellbeing. Both of these conditions optimize the actions of NGOs in orthogonal ways to maximize their impact on newcomer wellbeing. Understanding the value needs of newcomers enables NGOs to develop Custom Activities that newcomers will participate in which satisfy their most unmet SVQ. The presence of cities with high public opinion of newcomers creates an environment for NGOs to effectively Fundraise and then convert those funds into several different Custom Activities operating on a dynamic schedule via Prioritize to address the most unmet SVQ of newcomers. 
 
 A NGO with SVQs that are higher in Self-Transcendence and Openness-To-Change than Self-Enhancement and Conservation is also required to support this environment. As mentioned since public opinion is initially high sporadic Fundraise SVQ actions are still effective and Marketing Campaign SVQs actions are unnecessary. Instead, the bulk of the actions are spent on developing Custom Activities and dynamically scheduling them via Prioritize so the SVQ needs of newcomers are met. 
 
@@ -494,7 +488,7 @@ The identified conditions maximize public opinion at the expense of newcomer wel
 
 %These conditions are: (1) very high initial public opinion in the city, (2) an understanding of what the unsatisfied values newcomer are, (3) COAs that are high in self-transcendence and openness to change (and thus low in self-enhancement and conservation), (3) NGOs that are relatively high in self-transcendence and openness to change but lower than COAs and (4) INDs that are balanced across all values. These are very similar to the conditions that yield extremely high newcomer well being with one important distinction, here the INDs are balanced across all values. Recall, the conditions related to INDs that maximized well being resulted in a very lenient policy related to document quality that rarely resulted in a second decision or appeal. This created a short stay in IND accommodations which indirectly promoted newcomer wellbeing but decreased public opinion. 
 
-\section{Discussion and Conclusion}
+\section{Conclusion}
 \label{sec:discussion}
 In this paper we described and analyzed an agent based model to characterize the wellbeing of newcomers in the context of asylum logistics using Schwartz's theory of values as a decision procedure and wellbeing operationalization. The model produces policy relevant insights for decision-makers with respect to avoiding catastrophic outcomes related newcomer well-being and the public opinion and maximizing these outcomes. Analysis of the model elucidates that a relatively simple set of conditions is necessary to avoid catastrophic outcomes but is insufficient to maximize the outcomes. Further analysis highlights that the conditions that maximize one outcome (newcomer wellbeing or public opinion) do so at the expense of the other outcome. Specifically the Schwartz values of the government organization responsible for making the asylum decision (IND) are different depending on which outcome (newcomer wellbeing vs. public opinion) is maximized. When newcomer wellbeing is maximized the IND frequently takes actions which satisfy the Openness-To-Change and Self-Transcendence Schwartz Value Quadrants and rarely takes actions which satisfy the Conservation and Self-Enhancement Schwartz Value Quadrants. However, when public opinion is maximized the IND is performs actions with the same frequency across all four Schwartz Value Quadrants. The results do not take into account the costs incurred by the government organizations during the asylum seeking process. This is an opportunity for future analysis. In addition, social networks among newcomers and other sociological theories (i.e learning, goals, and norms) need to be added to the model so it is a closer match to reality. A roadmap of future work to address these deficiencies is available in \cite{phil.masters.thesis}. 
 \section*{Acknowledgments}
@@ -506,16 +500,16 @@ This work is part of the research program Responsible Innovation with project nu
 
 \section*{Author Biographies}
 
-\textbf{\uppercase{ROSS GORE}} is a Research Assistant Professor at the Virginia Modeling, Analysis and Simulation Center at Old Dominion University. He has a PhD degree in Computer Science from the University of Virginia. His email address is \email{ross.gore@gmail.com}.
+\textbf{\uppercase{ROSS GORE}} is a Research Assistant Professor at the Virginia Modeling, Analysis and Simulation Center at Old Dominion University. His email address is \email{ross.gore@gmail.com}.
 
 \textbf{\uppercase{PHILLIP WOZNY}} has a MS in Information and Computing Sciences at Utrecht University. In the near future he aims to develop AI and machine learning solutions in the Randstad area of The Netherlands. His email address is \email{p.j.wozny@students.uu.nl}.
 
-\textbf{\uppercase{FRANK P.M. DIGNUM}} is an Associate Professor in Information and Computing Sciences at Utrecht University. He has a PhD from the VU University Amsterdam. His email address is \email{f.p.m.dignum@uu.nl}.
+\textbf{\uppercase{FRANK P.M. DIGNUM}} is an Associate Professor in Information and Computing Sciences at Utrecht University. His email address is \email{f.p.m.dignum@uu.nl}.
 
-\textbf{\uppercase{F. LERON SHULTS}} is the Director of the NORCE Center for Modeling Social Systems and a Professor at the Institute for Religion, Philosophy, and History at the University of Agder in Kristiansand, Norway. His email address is \email{leron.shults@uia.no}.
+\textbf{\uppercase{F. LERON SHULTS}} is the Director of the NORCE Center for Modeling Social Systems and a Professor at the Institute for Religion, Philosophy, and History at the University of Agder. His email address is \email{leron.shults@uia.no}.
 
 \textbf{\uppercase{CHRISTINE BOSHUJZEN-VAN BURKEN}} is a Postdoctoral Researcher at the Eindhoven University of Technology. Her research focuses on technology and ethics for improving humanitarian logistics. She has a PhD from Eindhoven University of Technology. Her email address is \email{C.G.Boshuijzen@tue.nl}.
 
-\textbf{\uppercase{LAMBER ROYAKKERS}} is an Associate Professor in the Ethics of Technology at Eindhoven University of Technology. He received his PhD from Tilburg University. His email address is \email{l.m.m.royakkers@tue.nl}.
+\textbf{\uppercase{LAMBER ROYAKKERS}} is an Associate Professor in the Ethics of Technology at Eindhoven University of Technology. His email address is \email{l.m.m.royakkers@tue.nl}.
 
 \end{document}
