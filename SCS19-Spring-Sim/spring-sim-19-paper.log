@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  24 SEP 2018 17:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 OCT 2018 14:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -732,7 +732,33 @@ Package: amsthm 2015/03/04 v2.20.2
 Package: ulem 2012/05/18
 \ULdepth=\dimen164
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen165
+\captionmargin@=\dimen166
+\captionwidth=\dimen167
+\caption@tempdima=\dimen168
+\caption@indent=\dimen169
+\caption@parindent=\dimen170
+\caption@hangindent=\dimen171
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \xtable 
+\vskip 3pt \else \vskip \abovecaptionskip \fi \sbox \@tempboxa {#1: #2}\ifdim \
+wd \@tempboxa >\hsize #1: #2\par \else \global \@minipagefalse \hb@xt@ \hsize {
+\hfil \box \@tempboxa \hfil }\fi \vskip \belowcaptionskip .
+\c@ContinuedFloat=\count121
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
@@ -789,16 +815,16 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen165
-\Hy@linkcounter=\count121
-\Hy@pagecounter=\count122
+\@linkdim=\dimen172
+\Hy@linkcounter=\count122
+\Hy@pagecounter=\count123
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count123
+\Hy@SavedSpaceFactor=\count124
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -811,12 +837,12 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count124
+\c@Hy@tempcnt=\count125
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen166
-\Fld@menulength=\count125
-\Field@Width=\dimen167
-\Fld@charsize=\dimen168
+\XeTeXLinkMargin=\dimen173
+\Fld@menulength=\count126
+\Field@Width=\dimen174
+\Fld@charsize=\dimen175
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -826,17 +852,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count126
-\c@Item=\count127
-\c@Hfootnote=\count128
+\Hy@abspage=\count127
+\c@Item=\count128
+\c@Hfootnote=\count129
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count129
-\c@bookmark@seq@number=\count130
+\Fld@listcount=\count130
+\c@bookmark@seq@number=\count131
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -850,47 +876,44 @@ Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language80
 LaTeX Info: Redefining \_ on input line 43.
 )
-\c@theorem=\count131
-\c@definition=\count132
+\c@theorem=\count132
+\c@definition=\count133
 
-(./spring-sim-19-paper.aux
-
-LaTeX Warning: Label `tab:params' multiply defined.
-
-)
+(./spring-sim-19-paper.aux)
 \openout1 = `spring-sim-19-paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 105.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 107.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count133
-\scratchdimen=\dimen169
+\scratchcounter=\count134
+\scratchdimen=\dimen176
 \scratchbox=\box42
-\nofMPsegments=\count134
-\nofMParguments=\count135
+\nofMPsegments=\count135
+\nofMParguments=\count136
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count136
-\MPscratchDim=\dimen170
-\MPnumerator=\count137
-\makeMPintoPDFobject=\count138
+\MPscratchCnt=\count137
+\MPscratchDim=\dimen177
+\MPnumerator=\count138
+\makeMPintoPDFobject=\count139
 \everyMPtoPDFconversion=\toks42
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -907,8 +930,11 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box43
-Package hyperref Info: Link coloring ON on input line 105.
+Package hyperref Info: Link coloring ON on input line 107.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -916,153 +942,141 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count139
+\c@section@level=\count140
 )
-LaTeX Info: Redefining \ref on input line 105.
-LaTeX Info: Redefining \pageref on input line 105.
-LaTeX Info: Redefining \nameref on input line 105.
+LaTeX Info: Redefining \ref on input line 107.
+LaTeX Info: Redefining \pageref on input line 107.
+LaTeX Info: Redefining \nameref on input line 107.
 
 (./spring-sim-19-paper.out) (./spring-sim-19-paper.out)
 \@outlinefile=\write4
 \openout4 = `spring-sim-19-paper.out'.
 
  (./scsprocbib.tex
-\bibindent=\dimen171
+\bibindent=\dimen178
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 194.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 196.
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 19
-4.
+6.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 19
-4.
+6.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 19
-4.
+6.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 19
-4.
+6.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 194.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 196.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 194.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 196.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 194.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 196.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 194.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 196.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 194.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 194.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 196.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 196.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 194.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 196.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 194.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 204.
+(hyperref)                removing `\uppercase' on input line 206.
 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 218.
+(hyperref)                removing `\uppercase' on input line 216.
 
-<Asylum-Procedure.png, id=64, 1320.6138pt x 512.6352pt>
+<Asylum-Procedure.png, id=65, 1318.4457pt x 519.1395pt>
 File: Asylum-Procedure.png Graphic file (type png)
 
 <use Asylum-Procedure.png>
-Package pdftex.def Info: Asylum-Procedure.png used on input line 227.
-(pdftex.def)             Requested size: 352.31624pt x 136.76286pt.
- [2]
-<Color-Value-Circle.png, id=77, 508.5399pt x 427.5975pt>
+Package pdftex.def Info: Asylum-Procedure.png used on input line 225.
+(pdftex.def)             Requested size: 305.33788pt x 120.22339pt.
+ [2 <./Asylum-Procedure.png>]
+<Color-Value-Circle.png, id=80, 508.5399pt x 427.5975pt>
 File: Color-Value-Circle.png Graphic file (type png)
 
 <use Color-Value-Circle.png>
-Package pdftex.def Info: Color-Value-Circle.png used on input line 238.
-(pdftex.def)             Requested size: 211.3883pt x 177.74326pt.
- [3 <./Asylum-Procedure.png> <./Color-Value-Circle.png>]
+Package pdftex.def Info: Color-Value-Circle.png used on input line 236.
+(pdftex.def)             Requested size: 187.89912pt x 157.99329pt.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 246.
+(hyperref)                removing `\uppercase' on input line 244.
 
-<Agent-Value-In-Model.png, id=107, 1303.0281pt x 609.9588pt>
+[3 <./Color-Value-Circle.png>]
+<Agent-Value-In-Model.png, id=107, 1317.723pt x 593.0958pt>
 File: Agent-Value-In-Model.png Graphic file (type png)
 
 <use Agent-Value-In-Model.png>
-Package pdftex.def Info: Agent-Value-In-Model.png used on input line 257.
-(pdftex.def)             Requested size: 352.31624pt x 164.92375pt.
+Package pdftex.def Info: Agent-Value-In-Model.png used on input line 256.
+(pdftex.def)             Requested size: 305.33788pt x 137.42274pt.
  [4 <./Agent-Value-In-Model.png>] [5] [6]
-[7] <Newcomer-Wellbeing-Causal.png, id=145, 1545.6144pt x 902.8932pt>
+[7] <Newcomer-Wellbeing-Causal.png, id=136, 1565.6091pt x 898.0752pt>
 File: Newcomer-Wellbeing-Causal.png Graphic file (type png)
 
 <use Newcomer-Wellbeing-Causal.png>
-Package pdftex.def Info: Newcomer-Wellbeing-Causal.png used on input line 385.
-(pdftex.def)             Requested size: 352.31624pt x 205.80116pt.
+Package pdftex.def Info: Newcomer-Wellbeing-Causal.png used on input line 382.
+(pdftex.def)             Requested size: 287.72636pt x 165.04503pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 391.
+(hyperref)                removing `\uppercase' on input line 388.
 
-[8] [9 <./Newcomer-Wellbeing-Causal.png>] [10]
-<WellbeingVsPublicOpinionGraph.png, id=186, 1035.3882pt x 371.4678pt>
-File: WellbeingVsPublicOpinionGraph.png Graphic file (type png)
-
-<use WellbeingVsPublicOpinionGraph.png>
-Package pdftex.def Info: WellbeingVsPublicOpinionGraph.png used on input line 4
-51.
-(pdftex.def)             Requested size: 314.73497pt x 112.9149pt.
- [11]
+[8 <./Newcomer-Wellbeing-Causal.png>] [9] [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 463.
+(hyperref)                removing `\uppercase' on input line 460.
 
-(./spring-sim-19-paper.bbl [12 <./WellbeingVsPublicOpinionGraph.png>] [13])
-[14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 487.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 487.
+(./spring-sim-19-paper.bbl [11]) [12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 484.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 484.
  (./spring-sim-19-paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 487.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 487.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 484.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 484.
 Package rerunfilecheck Info: File `spring-sim-19-paper.out' has not changed.
 (rerunfilecheck)             Checksum: 0FE8725373FAAEC3928C687093799731;503.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 487.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 484.
  ) 
 Here is how much of TeX's memory you used:
- 16796 strings out of 493089
- 308274 string characters out of 6134842
- 376843 words of memory out of 5000000
- 19865 multiletter control sequences out of 15000+600000
+ 17785 strings out of 493089
+ 326487 string characters out of 6134842
+ 394153 words of memory out of 5000000
+ 20857 multiletter control sequences out of 15000+600000
  31085 words of font info for 59 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  62i,12n,56p,2335b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1073,10 +1087,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on spring-sim-19-paper.pdf (14 pages, 2277962 bytes).
+Output written on spring-sim-19-paper.pdf (12 pages, 2369785 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 223 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
