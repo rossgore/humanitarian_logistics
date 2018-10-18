@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 OCT 2018 08:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 OCT 2018 14:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1027,7 +1027,7 @@ File: Asylum-Procedure.png Graphic file (type png)
 Package pdftex.def Info: Asylum-Procedure.png used on input line 225.
 (pdftex.def)             Requested size: 305.33788pt x 120.22339pt.
  [2 <./Asylum-Procedure.png>]
-<Color-Value-Circle.png, id=80, 508.5399pt x 427.5975pt>
+<Color-Value-Circle.png, id=79, 508.5399pt x 427.5975pt>
 File: Color-Value-Circle.png Graphic file (type png)
 
 <use Color-Value-Circle.png>
@@ -1079,7 +1079,7 @@ Here is how much of TeX's memory you used:
  20856 multiletter control sequences out of 15000+600000
  31085 words of font info for 59 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 62i,12n,56p,2311b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,56p,2317b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
@@ -1087,7 +1087,7 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on spring-sim-19-paper.pdf (12 pages, 2370180 bytes).
+Output written on spring-sim-19-paper.pdf (12 pages, 2370282 bytes).
 PDF statistics:
  235 PDF objects out of 1000 (max. 8388607)
  199 compressed objects within 2 object streams
