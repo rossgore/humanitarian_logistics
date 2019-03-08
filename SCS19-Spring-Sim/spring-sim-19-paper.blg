@@ -3,9 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: spring-sim-19-paper.aux
 The style file: scsproc.bst
 Database file #1: demobib.bib
-Warning--no number and no volume in cox1992causality
-Warning--no number and no volume in dictionary2019newcomer
-Warning--page numbers missing in dictionary2019newcomer
 Warning--page numbers missing in gore2017augmenting
 Warning--no journal in 37
 Warning--no number and no volume in 37
@@ -14,45 +11,45 @@ Warning--empty organization in 38
 Warning--no journal in silverman2005modeling
 Warning--no number and no volume in silverman2005modeling
 Warning--page numbers missing in silverman2005modeling
-You've used 21 entries,
+You've used 19 entries,
             2956 wiz_defined-function locations,
-            756 strings with 8594 characters,
-and the built_in function-call counts, 14114 in all, are:
-= -- 1245
-> -- 976
+            744 strings with 8314 characters,
+and the built_in function-call counts, 13013 in all, are:
+= -- 1144
+> -- 924
 < -- 2
-+ -- 294
-- -- 328
-* -- 1246
-:= -- 2514
-add.period$ -- 63
-call.type$ -- 21
-change.case$ -- 129
-chr.to.int$ -- 21
-cite$ -- 32
-duplicate$ -- 380
-empty$ -- 870
-format.name$ -- 376
-if$ -- 2664
++ -- 282
+- -- 308
+* -- 1166
+:= -- 2311
+add.period$ -- 57
+call.type$ -- 19
+change.case$ -- 119
+chr.to.int$ -- 19
+cite$ -- 27
+duplicate$ -- 347
+empty$ -- 790
+format.name$ -- 356
+if$ -- 2463
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 17
-newline$ -- 121
-num.names$ -- 200
-pop$ -- 108
+missing$ -- 15
+newline$ -- 109
+num.names$ -- 180
+pop$ -- 102
 preamble$ -- 1
-purify$ -- 276
+purify$ -- 252
 quote$ -- 0
-skip$ -- 408
+skip$ -- 374
 stack$ -- 0
-substring$ -- 692
-swap$ -- 121
+substring$ -- 627
+swap$ -- 111
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 504
-warning$ -- 11
-while$ -- 190
+type$ -- 456
+warning$ -- 8
+while$ -- 168
 width$ -- 0
-write$ -- 301
-(There were 11 warnings)
+write$ -- 273
+(There were 8 warnings)
